@@ -1,0 +1,870 @@
+
+/* =========================================
+   1. GLOBAL STYLES
+========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #FAF7F2;
+    color: #171717;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    font-family: inherit;
+    cursor: pointer;
+}
+
+p {
+    color: #383838;
+}
+
+
+/* =========================================
+   2. NAVBAR
+========================================= */
+
+.navbar {
+    width: 100%;
+    min-height: 75px;
+    padding: 12px 6%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 25px;
+    background-color: #FAF7F2;
+    border-bottom: 1px solid #C9BDB1;
+}
+
+.webname {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 22px;
+    font-weight: bold;
+    color: #000018;
+}
+
+.weblogo {
+    width: 38px;
+    height: 38px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    background-color: #000018;
+    color: #FFFFFF;
+    font-size: 20px;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.menud {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.menud a {
+    font-size: 14px;
+    font-weight: 600;
+    color: #252525;
+    transition: color 0.3s;
+}
+
+.menud a:hover {
+    color: #873F3F;
+}
+
+.audit {
+    display: flex;
+    align-items: center;
+}
+
+.navbar .btn1 {
+    padding: 10px 17px;
+    border-radius: 5px;
+    background-color: #000018;
+    color: #FFFFFF;
+    border: 1px solid #000018;
+    font-size: 13px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.navbar .btn1:hover {
+    background-color: #873F3F;
+    border-color: #873F3F;
+}
+
+
+/* =========================================
+   3. HERO SECTION
+========================================= */
+
+.body1 {
+    width: 100%;
+    min-height: 540px;
+    padding: 65px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 45px;
+    background-color: #FAF7F2;
+}
+
+.content1 {
+    width: 55%;
+}
+
+.part1 {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.para1 {
+    font-size: clamp(40px, 5vw, 62px);
+    line-height: 1.12;
+    font-family: "Franklin Gothic Medium", Arial, sans-serif;
+    color: #000018;
+}
+
+.para2 {
+    max-width: 580px;
+    font-size: 16px;
+    line-height: 1.8;
+    color: #383838;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 14px;
+    margin-top: 10px;
+}
+
+.btn1,
+.btn2 {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 20px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.body1 .btn1 {
+    background-color: #000018;
+    color: #FFFFFF;
+    border: 1px solid #000018;
+}
+
+.body1 .btn1:hover {
+    background-color: #873F3F;
+    border-color: #873F3F;
+}
+
+.body1 .btn2 {
+    background-color: transparent;
+    color: #000018;
+    border: 1px solid #000018;
+}
+
+.body1 .btn2:hover {
+    background-color: #E9DED3;
+}
+
+.hero-note,
+.legal-note {
+    font-size: 12px;
+    color: #383838;
+}
+
+
+/* HERO DOCUMENT */
+
+.cont1_pic {
+    width: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-document {
+    width: 100%;
+    max-width: 430px;
+    padding: 25px;
+    background-color: #FFFFFF;
+    border: 1px solid #C9BDB1;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+.hero-document-top,
+.document-footer {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    font-size: 10px;
+    color: #383838;
+    font-weight: bold;
+}
+
+.hero-document h3 {
+    margin-top: 25px;
+    font-size: 22px;
+    color: #000018;
+}
+
+.document-subtitle {
+    color: #383838;
+    font-size: 12px;
+}
+
+.document-line {
+    height: 1px;
+    background-color: #C9BDB1;
+    margin: 20px 0;
+}
+
+.document-flag {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    padding: 14px;
+    margin-bottom: 12px;
+    background-color: #F5EEE7;
+    border-left: 3px solid #873F3F;
+}
+
+.document-flag h4 {
+    font-size: 13px;
+    color: #171717;
+}
+
+.document-flag p {
+    font-size: 11px;
+    color: #383838;
+}
+
+.document-flag span {
+    color: #873F3F;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+.document-footer {
+    padding-top: 15px;
+    margin-top: 20px;
+    border-top: 1px solid #C9BDB1;
+}
+
+
+/* =========================================
+   4. PRODUCT OVERVIEW STRIP
+========================================= */
+
+.body2 {
+    width: 100%;
+    min-height: 180px;
+    padding: 30px 6%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    background-color: #000018;
+}
+
+.body2 .part {
+    flex: 1;
+    min-width: 170px;
+    max-width: 230px;
+}
+
+.body2 h1 {
+    color: #F0B7A8;
+    font-size: 23px;
+    margin-bottom: 8px;
+}
+
+.body2 .para {
+    color: #FFFFFF;
+    font-size: 13px;
+    line-height: 1.7;
+}
+
+
+/* =========================================
+   5. HOW IT WORKS
+========================================= */
+
+.body3 {
+    width: 90%;
+    max-width: 1200px;
+    margin: 75px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 25px;
+}
+
+.body3 .heading {
+    font-size: 32px;
+    font-weight: bold;
+    line-height: 1.3;
+    color: #000018;
+}
+
+.box3s {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.box1,
+.box2,
+.box3,
+.box4 {
+    min-height: 190px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 25px;
+    background-color: #FFFFFF;
+    border: 1px solid #C9BDB1;
+    border-radius: 9px;
+    transition: 0.3s;
+}
+
+.box1:hover,
+.box2:hover,
+.box3:hover,
+.box4:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.07);
+}
+
+.box4 {
+    width: 33%;
+    min-height: 170px;
+}
+
+.box1in,
+.box2in,
+.box3in,
+.box4in {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.box1 .p1,
+.box2 .p1,
+.box3 .p1,
+.box4 .p1 {
+    color: #873F3F;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.box1 .p2,
+.box2 .p2,
+.box3 .p2,
+.box4 .p2 {
+    font-size: 19px;
+    font-weight: bold;
+    color: #000018;
+}
+
+.box1 .p3,
+.box2 .p3,
+.box3 .p3,
+.box4 .p3 {
+    color: #383838;
+    font-size: 13px;
+    line-height: 1.7;
+}
+
+
+/* =========================================
+   6. COMPARISON SECTION
+========================================= */
+
+.body4 {
+    width: 90%;
+    max-width: 1200px;
+    margin: 75px auto;
+}
+
+.body4in {
+    width: 100%;
+    margin: 0;
+}
+
+.part41 {
+    color: #873F3F;
+    font-size: 12px;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+.body4 .heading {
+    margin: 15px 0;
+    font-size: 32px;
+    font-weight: bold;
+    line-height: 1.3;
+    color: #000018;
+}
+
+.comparison-intro {
+    max-width: 750px;
+    margin-bottom: 25px;
+    color: #383838;
+    font-size: 14px;
+}
+
+.table {
+    width: 100%;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #FFFFFF;
+    border: 1px solid #C9BDB1;
+}
+
+th,
+td {
+    padding: 16px;
+    text-align: left;
+    vertical-align: top;
+    border: 1px solid #C9BDB1;
+    font-size: 13px;
+    line-height: 1.6;
+    color: #252525;
+}
+
+th {
+    background-color: #000018;
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+td.p2,
+th.p2 {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+
+/* =========================================
+   7. HOMEPAGE FEATURES
+========================================= */
+
+.homepage-features,
+.legal-awareness,
+.faq-section {
+    width: 90%;
+    max-width: 1200px;
+    margin: 75px auto;
+}
+
+.homepage-features h2,
+.legal-awareness h2,
+.faq-section h2 {
+    margin: 15px 0;
+    font-size: 32px;
+    line-height: 1.3;
+    color: #000018;
+}
+
+.features-intro {
+    max-width: 700px;
+    color: #383838;
+    font-size: 14px;
+}
+
+.homepage-feature-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.homepage-feature-card {
+    padding: 25px;
+    background-color: #FFFFFF;
+    border: 1px solid #C9BDB1;
+    border-radius: 9px;
+    transition: 0.3s;
+}
+
+.homepage-feature-card:hover {
+    transform: translateY(-4px);
+    border-color: #873F3F;
+}
+
+.homepage-feature-card span {
+    color: #873F3F;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.homepage-feature-card h3 {
+    margin: 12px 0;
+    font-size: 19px;
+    color: #000018;
+}
+
+.homepage-feature-card p {
+    color: #383838;
+    font-size: 13px;
+    line-height: 1.7;
+}
+
+.homepage-feature-card a {
+    display: inline-block;
+    margin-top: 15px;
+    color: #873F3F;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.homepage-feature-card a:hover {
+    text-decoration: underline;
+}
+
+
+/* =========================================
+   8. LEGAL AWARENESS
+========================================= */
+
+.legal-awareness {
+    padding: 45px;
+    background-color: #EFE5DA;
+    border: 1px solid #C9BDB1;
+    border-radius: 12px;
+}
+
+.legal-awareness > p:not(.legal-source-note) {
+    max-width: 800px;
+    color: #252525;
+    font-size: 14px;
+}
+
+.legal-awareness-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+    margin-top: 30px;
+}
+
+.legal-awareness-card {
+    padding: 22px;
+    background-color: #FFFFFF;
+    border: 1px solid #C9BDB1;
+    border-radius: 8px;
+}
+
+.legal-awareness-card h3 {
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #000018;
+}
+
+.legal-awareness-card p {
+    color: #383838;
+    font-size: 13px;
+    line-height: 1.7;
+}
+
+.legal-source-note {
+    margin-top: 25px;
+    color: #383838;
+    font-size: 12px;
+}
+
+
+/* =========================================
+   9. FAQ SECTION
+========================================= */
+
+.faq-list {
+    margin-top: 25px;
+}
+
+.faq-list details {
+    margin-bottom: 12px;
+    padding: 18px 20px;
+    background-color: #FFFFFF;
+    border: 1px solid #C9BDB1;
+    border-radius: 7px;
+}
+
+.faq-list summary {
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+    color: #000018;
+}
+
+.faq-list details p {
+    margin-top: 14px;
+    color: #383838;
+    font-size: 13px;
+    line-height: 1.7;
+}
+
+
+/* =========================================
+   10. FINAL CTA
+========================================= */
+
+.foot_above {
+    width: 100%;
+    min-height: 150px;
+    padding: 35px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 25px;
+    background-color: #EFE5DA;
+}
+
+.foot_above .foot1 {
+    font-size: 25px;
+    font-weight: bold;
+    line-height: 1.5;
+    color: #000018;
+}
+
+.foot_above .btn {
+    display: inline-flex;
+    padding: 12px 22px;
+    background-color: #000018;
+    color: #FFFFFF;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.foot_above .btn:hover {
+    background-color: #873F3F;
+}
+
+
+/* =========================================
+   11. FOOTER
+========================================= */
+
+footer {
+    width: 100%;
+    padding: 40px 6% 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    background-color: #000018;
+    color: #FFFFFF;
+}
+
+.footer-brand h2 {
+    margin-bottom: 8px;
+    font-size: 23px;
+    color: #FFFFFF;
+}
+
+.footer-brand p,
+.footer-disclaimer p {
+    max-width: 750px;
+    color: #FFFFFF;
+    font-size: 12px;
+    line-height: 1.7;
+}
+
+.footer-navigation {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 22px;
+}
+
+.footer-navigation a {
+    color: #FFFFFF;
+    font-size: 13px;
+}
+
+.footer-navigation a:hover {
+    color: #F0B7A8;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 12px;
+    padding-top: 18px;
+    border-top: 1px solid #77778A;
+}
+
+.footer-bottom p {
+    color: #FFFFFF;
+    font-size: 11px;
+}
+
+
+/* =========================================
+   12. RESPONSIVE DESIGN
+========================================= */
+
+@media (max-width: 900px) {
+
+    .navbar {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .menu {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .body1 {
+        flex-direction: column;
+        padding: 50px 6%;
+    }
+
+    .content1,
+    .cont1_pic {
+        width: 100%;
+    }
+
+    .hero-document {
+        max-width: 500px;
+    }
+
+    .box3s {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .box4 {
+        width: calc(50% - 10px);
+    }
+
+    .legal-awareness-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .navbar {
+        padding: 15px 5%;
+    }
+
+    .menu,
+    .menud {
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
+    .menud a {
+        font-size: 12px;
+    }
+
+    .audit {
+        display: none;
+    }
+
+    .body1 {
+        padding: 40px 5%;
+        gap: 30px;
+    }
+
+    .para1 {
+        font-size: 40px;
+    }
+
+    .para2 {
+        font-size: 14px;
+    }
+
+    .body2 {
+        justify-content: flex-start;
+        padding: 30px 8%;
+    }
+
+    .body2 .part {
+        flex-basis: 40%;
+    }
+
+    .body3,
+    .body4 {
+        width: 92%;
+        margin: 50px auto;
+    }
+
+    .body3 .heading,
+    .body4 .heading,
+    .homepage-features h2,
+    .legal-awareness h2,
+    .faq-section h2 {
+        font-size: 25px;
+    }
+
+    .box3s,
+    .homepage-feature-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .box4 {
+        width: 100%;
+    }
+
+    .legal-awareness {
+        padding: 25px 18px;
+    }
+
+    .foot_above {
+        flex-direction: column;
+        text-align: center;
+        padding: 35px 20px;
+    }
+
+    .foot_above .foot1 {
+        font-size: 21px;
+    }
+
+    .footer-navigation {
+        gap: 14px;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,328 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ClauseShield | Dispute Calculator</title>
+
+    <link rel="stylesheet" href="calculator.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <header>
+        <div class="navbar">
+
+            <div class="webname">
+                <div class="weblogo">C</div>
+                <span>ClauseShield</span>
+            </div>
+
+            <div class="menu">
+
+                <div class="menud">
+                    <a href="index.html">Home</a>
+                    <a href="audit.html">Audit</a>
+                    <a href="calculator.html">Calculator</a>
+                    <a href="wear.html">Wear &amp; Tear</a>
+                    <a href="about.html">About</a>
+                </div>
+
+                <div class="audit">
+                    <button class="btn1">
+                        <a href="audit.html">Audit my lease</a>
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+
+    <!-- MAIN CONTENT -->
+    <main class="calculator-main">
+
+        <!-- INTRODUCTION -->
+        <section class="calculator-intro">
+
+            <p class="step-label">// DISPUTE CALCULATOR</p>
+
+            <h1>Illegal deductions vs. your true refund</h1>
+
+            <p class="description">
+                Enter your deposit and each deduction your landlord made.
+                Review which charges may be challengeable, which need
+                evidence, and which may be justified.
+            </p>
+
+        </section>
+
+
+        <!-- DEPOSIT DETAILS -->
+        <section class="deposit-details">
+
+            <div class="detail-card">
+                <p>Deposit paid</p>
+                <h2>₹50,000</h2>
+            </div>
+
+            <div class="detail-card">
+                <p>Monthly rent</p>
+                <h2>₹18,000</h2>
+            </div>
+
+            <div class="detail-card demo-label">
+                <span>DEMO DATA</span>
+                <p>Sample rental dispute</p>
+            </div>
+
+        </section>
+
+
+        <!-- CALCULATOR CONTENT -->
+        <section class="calculator-content">
+
+            <!-- DEDUCTION TABLE -->
+            <div class="deduction-section">
+
+                <h2>Deduction breakdown</h2>
+
+                <p class="section-description">
+                    Review each deduction and the reason behind its
+                    illustrative classification.
+                </p>
+
+                <div class="table-container">
+
+                    <table>
+
+                        <thead>
+                            <tr>
+                                <th>Deduction</th>
+                                <th>Charged</th>
+                                <th>Verdict</th>
+                                <th>Why?</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+
+                            <tr>
+                                <td>
+                                    Painting
+                                    <br>
+                                    (one month's rent)
+                                </td>
+                                <td>₹18,000</td>
+                                <td>
+                                    <span class="verdict challenge">
+                                        Challengeable
+                                    </span>
+                                </td>
+                                <td>
+                                    A fixed charge without proof of
+                                    actual damage needs review.
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>Nail-hole filling</td>
+                                <td>₹2,000</td>
+                                <td>
+                                    <span class="verdict challenge">
+                                        Challengeable
+                                    </span>
+                                </td>
+                                <td>
+                                    Minor nail holes may be ordinary
+                                    wear and tear.
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>Deep cleaning</td>
+                                <td>₹3,500</td>
+                                <td>
+                                    <span class="verdict review">
+                                        Needs evidence
+                                    </span>
+                                </td>
+                                <td>
+                                    Depends on the property's condition
+                                    and supporting bills.
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>Broken window pane</td>
+                                <td>₹4,000</td>
+                                <td>
+                                    <span class="verdict justified">
+                                        Potentially justified
+                                    </span>
+                                </td>
+                                <td>
+                                    Actual tenant-caused damage
+                                    supported by repair evidence.
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>Unpaid electricity</td>
+                                <td>₹1,200</td>
+                                <td>
+                                    <span class="verdict justified">
+                                        Potentially justified
+                                    </span>
+                                </td>
+                                <td>
+                                    Unpaid bills may be deducted if
+                                    they are the tenant's responsibility.
+                                </td>
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+                <button type="button" class="add-deduction">
+                    + Add deduction
+                </button>
+
+            </div>
+
+
+            <!-- RESULT SIDEBAR -->
+            <aside class="result-section">
+
+                <p class="section-label">// YOUR RESULT</p>
+
+                <h2>Deposit recovery estimate</h2>
+
+                <div class="result-card">
+                    <p>Refund your landlord is offering</p>
+                    <h2>₹21,300</h2>
+                </div>
+
+                <div class="result-card recoverable">
+
+                    <p>Recoverable by challenging deductions</p>
+
+                    <h2>₹20,000–₹23,500</h2>
+
+                    <p class="result-note">
+                        ₹20,000 is classified as challengeable in this demo.
+                        The additional ₹3,500 depends on evidence for
+                        the cleaning charge.
+                    </p>
+
+                </div>
+
+                <a href="rebuttal.html" class="rebuttal-btn">
+                    Draft my rebuttal
+                </a>
+
+            </aside>
+
+        </section>
+
+
+        <!-- DEPOSIT DISTRIBUTION -->
+        <section class="distribution-section">
+
+            <h2>Where your ₹50,000 deposit goes</h2>
+
+            <p class="section-description">
+                Breakdown of the illustrative deposit allocation.
+            </p>
+
+            <!-- DISTRIBUTION BAR -->
+            <div class="distribution-bar">
+
+                <div class="bar-refund"></div>
+                <div class="bar-challenge"></div>
+                <div class="bar-review"></div>
+                <div class="bar-justified"></div>
+
+            </div>
+
+
+            <!-- DISTRIBUTION DETAILS -->
+            <div class="distribution-details">
+
+                <div class="distribution-item">
+                    <span class="color-box refund-color"></span>
+                    <div>
+                        <p>Refund offered</p>
+                        <h3>₹21,300</h3>
+                    </div>
+                </div>
+
+                <div class="distribution-item">
+                    <span class="color-box challenge-color"></span>
+                    <div>
+                        <p>Challengeable deductions</p>
+                        <h3>₹20,000</h3>
+                    </div>
+                </div>
+
+                <div class="distribution-item">
+                    <span class="color-box review-color"></span>
+                    <div>
+                        <p>Needs evidence</p>
+                        <h3>₹3,500</h3>
+                    </div>
+                </div>
+
+                <div class="distribution-item">
+                    <span class="color-box justified-color"></span>
+                    <div>
+                        <p>Potentially justified</p>
+                        <h3>₹5,200</h3>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- DISCLAIMER -->
+        <section class="legal-disclaimer">
+
+            <h3>Important information</h3>
+
+            <p>
+                This calculator provides an illustrative estimate,
+                not a legal determination. The treatment of deductions
+                depends on applicable state law, the rental agreement,
+                evidence of damage, bills and the circumstances of
+                the dispute. Consider consulting a qualified advocate
+                for legal advice.
+            </p>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        <div class="footer-brand">ClauseShield</div>
+
+        <p>
+            ClauseShield is an informational tool and does not provide
+            legal advice. Outputs are not a substitute for an advocate.
+        </p>
+
+    </footer>
+
+</body>
+</html>

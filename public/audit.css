@@ -1,0 +1,503 @@
+
+/* ==============================
+   1. GLOBAL STYLING
+================================ */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #FAF7F2;
+    color: #000018;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button,
+input,
+textarea {
+    font: inherit;
+}
+
+
+/* ==============================
+   2. NAVBAR
+================================ */
+
+.navbar {
+    min-height: 75px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 5%;
+    border-bottom: 1px solid #D8CEC3;
+    background-color: #FAF7F2;
+}
+
+.webname {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.weblogo {
+    width: 40px;
+    height: 40px;
+    background-color: #000018;
+    color: white;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+}
+
+.menud {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.menud a {
+    font-size: 0.95rem;
+}
+
+.menud a:hover {
+    color: #AB6666;
+}
+
+.nav-btn {
+    background-color: #000018;
+    color: white;
+    padding: 10px 18px;
+    border-radius: 5px;
+}
+
+
+/* ==============================
+   3. MAIN LAYOUT
+================================ */
+
+.audit-main {
+    max-width: 1250px;
+    width: 90%;
+    margin: 50px auto;
+    display: grid;
+    grid-template-columns: 1.5fr 0.8fr;
+    gap: 45px;
+    align-items: start;
+}
+
+
+/* ==============================
+   4. UPLOAD SECTION
+================================ */
+
+.upload-section {
+    width: 100%;
+}
+
+.step-label {
+    color: #AB6666;
+    font-size: 0.8rem;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    margin-bottom: 15px;
+}
+
+.upload-section h1 {
+    font-size: 2.5rem;
+    line-height: 1.2;
+    margin-bottom: 15px;
+}
+
+.description {
+    color: #666;
+    margin-bottom: 30px;
+    max-width: 650px;
+}
+
+
+/* ==============================
+   5. UPLOAD FORM
+================================ */
+
+.audit-form {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+
+/* TABS */
+
+.upload-tabs {
+    display: flex;
+    gap: 10px;
+    border-bottom: 1px solid #D8CEC3;
+}
+
+.tab-btn {
+    background: transparent;
+    border: none;
+    padding: 12px 15px;
+    cursor: pointer;
+    color: #666;
+}
+
+.tab-btn.active {
+    color: #000018;
+    font-weight: bold;
+    border-bottom: 3px solid #AB6666;
+}
+
+
+/* UPLOAD AREA */
+
+.drop-area {
+    min-height: 230px;
+    border: 2px dashed #AB6666;
+    border-radius: 10px;
+    background-color: #F3EEE7;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    gap: 10px;
+    padding: 25px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.drop-area:hover {
+    background-color: #EDE3D8;
+}
+
+.upload-icon {
+    width: 50px;
+    height: 50px;
+    background-color: #000018;
+    color: white;
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 1.7rem;
+}
+
+.drop-area h3 {
+    font-size: 1.1rem;
+}
+
+.drop-area p {
+    color: #777;
+    font-size: 0.9rem;
+}
+
+.choose-file {
+    background-color: #AB6666;
+    color: white;
+    padding: 9px 20px;
+    border-radius: 5px;
+}
+
+.drop-area input[type="file"] {
+    display: none;
+}
+
+
+/* PASTE MESSAGE */
+
+.input-panel textarea {
+    width: 100%;
+    min-height: 180px;
+    resize: vertical;
+    padding: 15px;
+    border: 1px solid #D8CEC3;
+    border-radius: 7px;
+    background-color: white;
+}
+
+
+/* ==============================
+   6. DOCUMENT DETAILS
+================================ */
+
+.document-details {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.document-details h2 {
+    font-size: 1.4rem;
+    margin-bottom: 5px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.form-group label {
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+.form-group input {
+    width: 100%;
+    height: 45px;
+    padding: 10px 12px;
+
+    border: 1px solid #D8CEC3;
+    border-radius: 6px;
+
+    background-color: white;
+    outline: none;
+}
+
+.form-group input:focus,
+.input-panel textarea:focus {
+    border-color: #AB6666;
+}
+
+
+/* ==============================
+   7. RUN AUDIT BUTTON
+================================ */
+
+.run-audit {
+    width: 100%;
+    min-height: 50px;
+
+    background-color: #000018;
+    color: white;
+
+    border: none;
+    border-radius: 6px;
+
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.run-audit:hover {
+    background-color: #AB6666;
+}
+
+.disclaimer {
+    text-align: center;
+    color: #777;
+    font-size: 0.8rem;
+    margin-top: -15px;
+}
+
+
+/* ==============================
+   8. RIGHT SIDEBAR
+================================ */
+
+.audit-sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+.demo-section,
+.next-section {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.section-label {
+    color: #AB6666;
+    font-size: 0.8rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.demo-section h2 {
+    font-size: 1.4rem;
+    line-height: 1.3;
+}
+
+
+/* DEMO CARDS */
+
+.demo-card {
+    width: 100%;
+    text-align: left;
+    padding: 17px;
+
+    border: 1px solid #D8CEC3;
+    border-radius: 8px;
+
+    background-color: white;
+    cursor: pointer;
+}
+
+.demo-card:hover {
+    border-color: #AB6666;
+    background-color: #F3EEE7;
+}
+
+.demo-card h3 {
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+
+.demo-card p {
+    color: #777;
+    font-size: 0.85rem;
+}
+
+
+/* ==============================
+   9. NEXT STEPS
+================================ */
+
+.next-step {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #D8CEC3;
+}
+
+.step-number {
+    min-width: 35px;
+    height: 35px;
+
+    background-color: #F3EEE7;
+    color: #AB6666;
+
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-weight: bold;
+    font-size: 0.85rem;
+}
+
+.next-step h3 {
+    font-size: 0.95rem;
+}
+
+.next-step p {
+    color: #777;
+    font-size: 0.8rem;
+}
+
+
+/* ==============================
+   10. FOOTER
+================================ */
+
+footer {
+    background-color: #000018;
+    color: white;
+    padding: 30px 5%;
+}
+
+.footer-brand {
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+footer p {
+    color: #D8CEC3;
+    font-size: 0.85rem;
+}
+
+
+/* ==============================
+   11. RESPONSIVE DESIGN
+================================ */
+
+@media (max-width: 900px) {
+
+    .audit-main {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .audit-sidebar {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: start;
+    }
+
+    .menu {
+        gap: 15px;
+    }
+
+    .menud {
+        gap: 12px;
+    }
+
+}
+
+@media (max-width: 650px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .menu {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .menud {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .audit-main {
+        width: 92%;
+        margin: 30px auto;
+    }
+
+    .upload-section h1 {
+        font-size: 2rem;
+    }
+
+    .audit-sidebar {
+        display: flex;
+    }
+
+    .upload-tabs {
+        gap: 2px;
+    }
+
+    .tab-btn {
+        padding: 10px 7px;
+        font-size: 0.8rem;
+    }
+
+}

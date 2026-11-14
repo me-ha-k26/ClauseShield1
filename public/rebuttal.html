@@ -1,0 +1,378 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rebuttal Studio | ClauseShield</title>
+    <link rel="stylesheet" href="rebuttal.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <header class="navbar">
+        <div class="webname">
+            <span class="weblogo">C</span>
+            <h2>ClauseShield</h2>
+        </div>
+
+        <nav class="menu">
+            <a href="index.html">Home</a>
+            <a href="audit.html">Audit</a>
+            <a href="calculator.html">Calculator</a>
+            <a href="wear.html">Wear & Tear</a>
+            <a href="about.html">About</a>
+        </nav>
+
+        <a href="audit.html" class="nav-btn">Audit my lease</a>
+    </header>
+
+
+    <!-- MAIN CONTENT -->
+    <main class="rebuttal-main">
+
+        <!-- INTRODUCTION -->
+        <section class="rebuttal-intro">
+
+            <p class="section-label">// REBUTTAL STUDIO</p>
+
+            <h1>Stand your ground.<br>
+                <span>Respond with confidence.</span>
+            </h1>
+
+            <p class="intro-description">
+                Received an unexpected deduction or a message from your landlord?
+                Prepare a clear, evidence-based response that explains your position
+                professionally.
+            </p>
+
+        </section>
+
+
+        <!-- REBUTTAL WORKSPACE -->
+        <section class="rebuttal-workspace">
+
+            <!-- LEFT PANEL -->
+            <div class="rebuttal-input">
+
+                <div class="panel-heading">
+                    <div>
+                        <p class="section-label">01 / YOUR SIDE</p>
+                        <h2>Tell us what happened</h2>
+                    </div>
+
+                    <span class="step-number">01</span>
+                </div>
+
+                <form class="rebuttal-form">
+
+                    <label for="disputeType">Type of dispute</label>
+
+                    <select id="disputeType" name="disputeType">
+                        <option value="">Select dispute type</option>
+                        <option value="security-deposit">Security deposit deduction</option>
+                        <option value="painting">Painting charges</option>
+                        <option value="cleaning">Cleaning charges</option>
+                        <option value="damage">Property damage claim</option>
+                        <option value="notice">Notice or eviction message</option>
+                        <option value="other">Other</option>
+                    </select>
+
+
+                    <label for="landlordMessage">
+                        Landlord's message or deduction reason
+                    </label>
+
+                    <textarea
+                        id="landlordMessage"
+                        name="landlordMessage"
+                        rows="5"
+                        placeholder="Paste the message received from your landlord..."
+                    ></textarea>
+
+
+                    <label for="tenantExplanation">
+                        Explain your side of the story
+                    </label>
+
+                    <textarea
+                        id="tenantExplanation"
+                        name="tenantExplanation"
+                        rows="6"
+                        placeholder="Explain what happened. For example, mention the property's condition when you moved in, any repairs, or previous discussions..."
+                    ></textarea>
+
+
+                    <label for="evidence">
+                        Supporting evidence (optional)
+                    </label>
+
+                    <div class="evidence-upload">
+                        <input
+                            type="file"
+                            id="evidence"
+                            name="evidence"
+                            accept=".pdf,.jpg,.jpeg,.png"
+                            multiple
+                        >
+
+                        <p>Upload receipts, photographs, inspection reports or messages.</p>
+                        <span>Accepted formats: PDF, JPG, PNG</span>
+                    </div>
+
+
+                    <button type="button" class="generate-btn">
+                        Prepare my rebuttal →
+                    </button>
+
+                    <p class="form-note">
+                        Your response should be reviewed for factual accuracy
+                        before sending it to your landlord.
+                    </p>
+
+                </form>
+
+            </div>
+
+
+            <!-- RIGHT PANEL -->
+            <div class="rebuttal-output">
+
+                <div class="panel-heading">
+                    <div>
+                        <p class="section-label">02 / YOUR RESPONSE</p>
+                        <h2>Rebuttal preview</h2>
+                    </div>
+
+                    <span class="step-number">02</span>
+                </div>
+
+
+                <div class="output-status">
+                    <span class="status-dot"></span>
+                    <p>Sample response preview</p>
+                </div>
+
+
+                <div class="response-document">
+
+                    <div class="document-header">
+                        <div>
+                            <h3>Deposit Deduction Dispute</h3>
+                            <p>Draft response</p>
+                        </div>
+
+                        <span class="document-tag">SAMPLE</span>
+                    </div>
+
+
+                    <div class="document-divider"></div>
+
+
+                    <p class="response-greeting">
+                        Dear Landlord,
+                    </p>
+
+
+                    <p class="response-text">
+                        I am writing regarding the proposed deduction from my
+                        security deposit for repainting charges.
+                    </p>
+
+
+                    <p class="response-text">
+                        I would appreciate an itemised explanation of the
+                        deduction, along with supporting invoices or evidence
+                        showing the actual cost incurred.
+                    </p>
+
+
+                    <p class="response-text">
+                        If the charges relate to ordinary deterioration from
+                        normal residential use, I request that these be
+                        distinguished from damage beyond normal wear and tear.
+                    </p>
+
+
+                    <p class="response-text">
+                        I would be grateful if you could review the deduction
+                        and share the relevant documentation so that we can
+                        resolve this matter fairly.
+                    </p>
+
+
+                    <p class="response-greeting">
+                        Regards,<br>
+                        [Your Name]
+                    </p>
+
+                </div>
+
+
+                <div class="output-actions">
+                    <button type="button" class="copy-btn">
+                        Copy response
+                    </button>
+
+                    <button type="button" class="download-btn">
+                        Download draft
+                    </button>
+                </div>
+
+
+                <p class="output-note">
+                    This is an illustrative sample, not a generated legal
+                    response. The final draft should reflect your actual
+                    agreement, evidence and applicable law.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- HOW IT WORKS -->
+        <section class="rebuttal-steps">
+
+            <p class="section-label">// HOW IT WORKS</p>
+
+            <h2>From confusion to a clear response</h2>
+
+            <div class="steps-grid">
+
+                <div class="step-card">
+                    <span>01</span>
+                    <h3>Share the issue</h3>
+                    <p>
+                        Enter the landlord's message and explain the
+                        deduction or disagreement.
+                    </p>
+                </div>
+
+
+                <div class="step-card">
+                    <span>02</span>
+                    <h3>Add evidence</h3>
+                    <p>
+                        Include relevant photographs, receipts, agreement
+                        clauses or previous messages.
+                    </p>
+                </div>
+
+
+                <div class="step-card">
+                    <span>03</span>
+                    <h3>Review your draft</h3>
+                    <p>
+                        Check that the response accurately represents
+                        your situation and supporting evidence.
+                    </p>
+                </div>
+
+
+                <div class="step-card">
+                    <span>04</span>
+                    <h3>Respond confidently</h3>
+                    <p>
+                        Use the reviewed draft to communicate your position
+                        clearly and professionally.
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- IMPORTANT TIPS -->
+        <section class="response-tips">
+
+            <div class="tips-content">
+                <p class="section-label">// BEFORE YOU SEND</p>
+
+                <h2>Make your response stronger</h2>
+
+                <p>
+                    A well-supported response is more useful than an
+                    emotional or unsupported accusation.
+                </p>
+            </div>
+
+
+            <div class="tips-list">
+
+                <div class="tip-item">
+                    <span>✓</span>
+                    <p>Ask for an itemised breakdown of every deduction.</p>
+                </div>
+
+                <div class="tip-item">
+                    <span>✓</span>
+                    <p>Keep copies of receipts, photographs and written communication.</p>
+                </div>
+
+                <div class="tip-item">
+                    <span>✓</span>
+                    <p>Refer to the relevant clauses in your rental agreement.</p>
+                </div>
+
+                <div class="tip-item">
+                    <span>✓</span>
+                    <p>Keep your language factual, respectful and specific.</p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- CTA -->
+        <section class="rebuttal-cta">
+
+            <p class="section-label">// NEED MORE CLARITY?</p>
+
+            <h2>Understand the agreement before responding.</h2>
+
+            <p>
+                Review your rental agreement to identify clauses that may
+                affect your deposit or dispute.
+            </p>
+
+            <a href="audit.html" class="cta-btn">Audit my agreement →</a>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer class="footer">
+
+        <div class="footer-top">
+            <div>
+                <h2>ClauseShield</h2>
+                <p>Understand your agreement. Protect your interests.</p>
+            </div>
+
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="audit.html">Audit</a>
+                <a href="calculator.html">Calculator</a>
+                <a href="wear.html">Wear & Tear</a>
+                <a href="about.html">About</a>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 ClauseShield. All rights reserved.</p>
+            <p>
+                ClauseShield provides informational assistance, not
+                legal advice or a substitute for a qualified lawyer.
+            </p>
+        </div>
+
+    </footer>
+
+</body>
+</html>

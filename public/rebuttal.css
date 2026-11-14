@@ -1,0 +1,784 @@
+
+/* ==============================
+   GLOBAL RESET
+================================ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #FAF7F2;
+    color: #000018;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button,
+input,
+textarea,
+select {
+    font-family: inherit;
+}
+
+
+/* ==============================
+   NAVBAR
+================================ */
+
+.navbar {
+    width: 100%;
+    min-height: 75px;
+    padding: 12px 6%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #FAF7F2;
+    border-bottom: 1px solid #D8CEC3;
+    gap: 25px;
+}
+
+.webname {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.webname h2 {
+    font-size: 23px;
+    font-weight: 700;
+}
+
+.weblogo {
+    width: 38px;
+    height: 38px;
+    background-color: #000018;
+    color: white;
+    border-radius: 9px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 21px;
+    font-weight: bold;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+}
+
+.menu a {
+    font-size: 14px;
+    color: #393939;
+    transition: 0.3s;
+}
+
+.menu a:hover {
+    color: #AB6666;
+}
+
+.nav-btn {
+    background-color: #000018;
+    color: white;
+    padding: 11px 20px;
+    border-radius: 6px;
+    font-size: 13px;
+    transition: 0.3s;
+}
+
+.nav-btn:hover {
+    background-color: #AB6666;
+}
+
+
+/* ==============================
+   MAIN SECTION
+================================ */
+
+.rebuttal-main {
+    width: 88%;
+    max-width: 1250px;
+    margin: auto;
+}
+
+
+/* ==============================
+   INTRO SECTION
+================================ */
+
+.rebuttal-intro {
+    text-align: center;
+    padding: 75px 10px 55px;
+}
+
+.section-label {
+    color: #AB6666;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+.rebuttal-intro h1 {
+    font-size: 45px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    color: #000018;
+}
+
+.rebuttal-intro h1 span {
+    color: #AB6666;
+}
+
+.intro-description {
+    max-width: 680px;
+    margin: auto;
+    font-size: 16px;
+    color: #66615C;
+}
+
+
+/* ==============================
+   REBUTTAL WORKSPACE
+================================ */
+
+.rebuttal-workspace {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+    align-items: start;
+}
+
+.rebuttal-input,
+.rebuttal-output {
+    background-color: #FFFFFF;
+    border: 1px solid #E2D9CF;
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.035);
+}
+
+.panel-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #EAE2D9;
+    padding-bottom: 20px;
+    margin-bottom: 25px;
+}
+
+.panel-heading .section-label {
+    margin-bottom: 7px;
+}
+
+.panel-heading h2 {
+    font-size: 23px;
+    color: #000018;
+}
+
+.step-number {
+    width: 38px;
+    height: 38px;
+    background-color: #F3EEE7;
+    color: #AB6666;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+
+/* ==============================
+   FORM
+================================ */
+
+.rebuttal-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.rebuttal-form label {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 9px;
+    margin-top: 18px;
+    color: #292929;
+}
+
+.rebuttal-form select,
+.rebuttal-form textarea {
+    width: 100%;
+    padding: 13px 14px;
+    border: 1px solid #D8CEC3;
+    border-radius: 7px;
+    background-color: #FAF7F2;
+    font-size: 14px;
+    color: #333333;
+    outline: none;
+    transition: 0.3s;
+}
+
+.rebuttal-form select:focus,
+.rebuttal-form textarea:focus {
+    border-color: #AB6666;
+    box-shadow: 0 0 0 3px rgba(171, 102, 102, 0.10);
+}
+
+.rebuttal-form textarea {
+    resize: vertical;
+    min-height: 110px;
+}
+
+.rebuttal-form textarea::placeholder {
+    color: #99918A;
+    font-size: 13px;
+}
+
+
+/* ==============================
+   FILE UPLOAD
+================================ */
+
+.evidence-upload {
+    border: 2px dashed #D8CEC3;
+    background-color: #FAF7F2;
+    border-radius: 8px;
+    padding: 22px;
+    text-align: center;
+}
+
+.evidence-upload input {
+    width: 100%;
+    font-size: 13px;
+    color: #555555;
+}
+
+.evidence-upload p {
+    font-size: 13px;
+    color: #555555;
+    margin-top: 12px;
+}
+
+.evidence-upload span {
+    display: block;
+    font-size: 11px;
+    color: #99918A;
+    margin-top: 5px;
+}
+
+
+/* ==============================
+   GENERATE BUTTON
+================================ */
+
+.generate-btn {
+    width: 100%;
+    margin-top: 25px;
+    padding: 14px;
+    background-color: #000018;
+    color: white;
+    border: none;
+    border-radius: 7px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.generate-btn:hover {
+    background-color: #AB6666;
+    transform: translateY(-2px);
+}
+
+.form-note {
+    font-size: 11px;
+    color: #888078;
+    margin-top: 12px;
+    text-align: center;
+}
+
+
+/* ==============================
+   OUTPUT PANEL
+================================ */
+
+.output-status {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    background-color: #F3EEE7;
+    padding: 11px 14px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+}
+
+.output-status p {
+    font-size: 12px;
+    color: #5F5851;
+}
+
+.status-dot {
+    width: 8px;
+    height: 8px;
+    background-color: #AB6666;
+    border-radius: 50%;
+}
+
+
+/* ==============================
+   RESPONSE DOCUMENT
+================================ */
+
+.response-document {
+    background-color: #FAF7F2;
+    border: 1px solid #E2D9CF;
+    border-radius: 8px;
+    padding: 25px;
+}
+
+.document-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.document-header h3 {
+    font-size: 17px;
+    color: #000018;
+}
+
+.document-header p {
+    font-size: 12px;
+    color: #888078;
+    margin-top: 3px;
+}
+
+.document-tag {
+    background-color: #F0E0D8;
+    color: #995B4D;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+.document-divider {
+    height: 1px;
+    background-color: #D8CEC3;
+    margin: 20px 0;
+}
+
+.response-greeting {
+    font-size: 14px;
+    color: #333333;
+    margin-bottom: 15px;
+}
+
+.response-text {
+    font-size: 13px;
+    color: #55504B;
+    margin-bottom: 16px;
+    text-align: justify;
+}
+
+
+/* ==============================
+   OUTPUT ACTION BUTTONS
+================================ */
+
+.output-actions {
+    display: flex;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+.copy-btn,
+.download-btn {
+    flex: 1;
+    padding: 12px 10px;
+    border-radius: 6px;
+    font-size: 13px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.copy-btn {
+    background-color: #000018;
+    color: white;
+    border: 1px solid #000018;
+}
+
+.download-btn {
+    background-color: transparent;
+    color: #000018;
+    border: 1px solid #000018;
+}
+
+.copy-btn:hover {
+    background-color: #AB6666;
+    border-color: #AB6666;
+}
+
+.download-btn:hover {
+    background-color: #F3EEE7;
+}
+
+.output-note {
+    color: #888078;
+    font-size: 11px;
+    margin-top: 15px;
+    line-height: 1.5;
+}
+
+
+/* ==============================
+   HOW IT WORKS
+================================ */
+
+.rebuttal-steps {
+    padding: 85px 0;
+}
+
+.rebuttal-steps > h2 {
+    font-size: 30px;
+    margin-bottom: 35px;
+    color: #000018;
+}
+
+.steps-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+}
+
+.step-card {
+    background-color: #F3EEE7;
+    border: 1px solid #E2D9CF;
+    border-radius: 9px;
+    padding: 25px 20px;
+    transition: 0.3s;
+}
+
+.step-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+}
+
+.step-card span {
+    display: inline-flex;
+    width: 35px;
+    height: 35px;
+    justify-content: center;
+    align-items: center;
+    background-color: #AB6666;
+    color: white;
+    border-radius: 50%;
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.step-card h3 {
+    font-size: 17px;
+    margin-bottom: 10px;
+}
+
+.step-card p {
+    font-size: 13px;
+    color: #6E6861;
+}
+
+
+/* ==============================
+   RESPONSE TIPS
+================================ */
+
+.response-tips {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 45px;
+    padding: 40px;
+    background-color: #F3EEE7;
+    border-radius: 12px;
+    margin-bottom: 85px;
+}
+
+.tips-content h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.tips-content > p:last-child {
+    color: #6E6861;
+    font-size: 14px;
+}
+
+.tips-list {
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+    justify-content: center;
+}
+
+.tip-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+}
+
+.tip-item span {
+    width: 23px;
+    height: 23px;
+    flex-shrink: 0;
+    background-color: #AB6666;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+}
+
+.tip-item p {
+    font-size: 13px;
+    color: #4F4943;
+}
+
+
+/* ==============================
+   CTA SECTION
+================================ */
+
+.rebuttal-cta {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #000018;
+    color: white;
+    border-radius: 12px;
+    margin-bottom: 80px;
+}
+
+.rebuttal-cta .section-label {
+    color: #D9A3A3;
+}
+
+.rebuttal-cta h2 {
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.rebuttal-cta p:not(.section-label) {
+    color: #D0CFD6;
+    font-size: 14px;
+    max-width: 620px;
+    margin: 0 auto 25px;
+}
+
+.cta-btn {
+    display: inline-block;
+    padding: 13px 25px;
+    background-color: #AB6666;
+    color: white;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.cta-btn:hover {
+    background-color: #C17C7C;
+    transform: translateY(-2px);
+}
+
+
+/* ==============================
+   FOOTER
+================================ */
+
+.footer {
+    background-color: #000018;
+    color: white;
+    padding: 45px 6% 20px;
+}
+
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    padding-bottom: 30px;
+}
+
+.footer-top h2 {
+    font-size: 23px;
+    margin-bottom: 8px;
+}
+
+.footer-top p {
+    font-size: 13px;
+    color: #C0BEC8;
+}
+
+.footer-links {
+    display: flex;
+    gap: 22px;
+    flex-wrap: wrap;
+}
+
+.footer-links a {
+    font-size: 13px;
+    color: #D0CFD6;
+    transition: 0.3s;
+}
+
+.footer-links a:hover {
+    color: #D9A3A3;
+}
+
+.footer-bottom {
+    border-top: 1px solid #39394B;
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.footer-bottom p {
+    font-size: 11px;
+    color: #A9A7B2;
+}
+
+
+/* ==============================
+   RESPONSIVE DESIGN
+================================ */
+
+@media (max-width: 1000px) {
+
+    .navbar {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .menu {
+        gap: 18px;
+    }
+
+    .rebuttal-workspace {
+        grid-template-columns: 1fr;
+    }
+
+    .steps-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media (max-width: 650px) {
+
+    .navbar {
+        padding: 15px 5%;
+    }
+
+    .menu {
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 13px;
+    }
+
+    .menu a {
+        font-size: 12px;
+    }
+
+    .nav-btn {
+        display: none;
+    }
+
+    .rebuttal-main {
+        width: 92%;
+    }
+
+    .rebuttal-intro {
+        padding: 50px 5px 35px;
+    }
+
+    .rebuttal-intro h1 {
+        font-size: 32px;
+    }
+
+    .intro-description {
+        font-size: 14px;
+    }
+
+    .rebuttal-input,
+    .rebuttal-output {
+        padding: 20px;
+    }
+
+    .panel-heading h2 {
+        font-size: 19px;
+    }
+
+    .steps-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .rebuttal-steps {
+        padding: 55px 0;
+    }
+
+    .rebuttal-steps > h2 {
+        font-size: 25px;
+    }
+
+    .response-tips {
+        grid-template-columns: 1fr;
+        padding: 25px;
+        gap: 25px;
+        margin-bottom: 55px;
+    }
+
+    .tips-content h2 {
+        font-size: 24px;
+    }
+
+    .output-actions {
+        flex-direction: column;
+    }
+
+    .rebuttal-cta {
+        padding: 45px 20px;
+        margin-bottom: 55px;
+    }
+
+    .rebuttal-cta h2 {
+        font-size: 24px;
+    }
+
+    .footer-top {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .footer-links {
+        gap: 15px;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+    }
+
+}
